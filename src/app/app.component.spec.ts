@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'crypto-tracker'`, () => {
+  it(`should have as title 'crypto-checker-yt'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('crypto-tracker');
+    expect(app.title).toEqual('crypto-checker-yt');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('crypto-tracker app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('crypto-checker-yt app is running!');
   });
 });

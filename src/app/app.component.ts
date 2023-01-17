@@ -1,3 +1,4 @@
+import { CurrencyService } from './service/currency.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'crypto-tracker';
+  selectedCurrency: string = "EUR";
+  constructor(private currencyService: CurrencyService) {
+
+  }
+  sendCurrency(event: string) {
+    this.currencyService.setCurrency(event);
+  }
 }
