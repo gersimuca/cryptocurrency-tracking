@@ -1,7 +1,24 @@
 <mat-toolbar>
-  <span>CRYPTO TRACKER</span>
+  <span style="margin: 20px 20px">
+    <div class="example-button-container">
+      <button
+        (click)="goToHomePage()"
+        mat-fab
+        color="warn"
+        aria-label="Example icon button with a home icon"
+        style="background-color: skyblue"
+      >
+        <mat-icon>home</mat-icon>
+      </button>
+    </div>
+  </span>
+  <span (click)="goToHomePage()"> <a href="" class="nav">Home</a></span>
   <span class="example-spacer"></span>
-  <mat-form-field appearance="outline" class="field">
+  <mat-form-field
+    appearance="outline"
+    class="example-10"
+    style="margin-right: 100px"
+  >
     <mat-select
       (valueChange)="sendCurrency($event)"
       class="text-sm"

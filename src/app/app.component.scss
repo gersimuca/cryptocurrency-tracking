@@ -4,5 +4,34 @@
 
 .field {
   padding: auto;
-  margin-top: 29px;
+  margin-top: auto;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.nav {
+  text-decoration: none;
+  color: white;
+}
+
+.nav:hover {
+  color: rgb(97, 136, 255);
+  pointer-events: none;
+}
+
+.example-10::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example-10 {
+  margin: auto;
+  padding: auto;
+  border: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
