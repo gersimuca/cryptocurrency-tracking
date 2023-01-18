@@ -35,16 +35,22 @@
 }
 
 .card {
-  border: solid;
+  border: 0;
   background: transparent;
   color: #fff;
-  padding-left: 10px;
+  /* padding: 10px; */
   margin: 40px;
-  width: 100px;
-  height: 200px;
+  /* width: 100px; */
+  /* height: 200px; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: fit-content;
+  background-clip: border-box;
+
   img {
     width: 70px;
-    margin: 0 auto;
+    margin: 0 20px;
   }
   h5 {
     font-weight: 500;
@@ -56,6 +62,7 @@
 
 table {
   width: 100%;
+  background: transparent;
 }
 
 .mat-form-field {
@@ -73,7 +80,7 @@ th {
 }
 
 :host ::ng-deep .mat-paginator-outer-container {
-  background-color: rgb(36, 37, 37);
+  background-color: #171924;
 }
 
 :host ::ng-deep tr.mat-header-row {
@@ -84,12 +91,7 @@ th {
   height: 70px;
 }
 
-.field {
-  padding: 15px;
-  display: block;
-}
-
 .cus-col {
-  display: inline-flex;
-  background: transparent;
+  flex: 0 0 auto;
+  width: 12%;
 }
